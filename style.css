@@ -359,3 +359,85 @@ ul li, ol li {
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+/* Asigură că header-ul și logo-ul sunt flexibile */
+header {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px; /* Reduce dimensiunea logo-ului */
+    height: auto;
+}
+
+/* Asigură că textul se aranjează bine */
+.car h1 {
+    font-size: 22px; /* Ajustează dimensiunea titlului */
+    margin: 5px 0;
+}
+
+/* Stiluri pentru programul de lucru */
+.work-hours {
+    font-size: 14px; /* Micșorează fontul pe mobil */
+    text-align: right;
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* MEDIA QUERY PENTRU MOBIL */
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 80px; /* Redimensionează logo-ul pe mobil */
+    }
+
+    .car h1 {
+        font-size: 18px; /* Mai mic pentru mobile */
+    }
+
+    .work-hours {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}
